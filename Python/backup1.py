@@ -16,7 +16,7 @@ source = ['/data/data/com.termux/files']
 
 directory
 '''
-target_dir = '/sdcard/backup/'
+target_dir = '/sdcard/'
 
 ''' Remember to change this
 
@@ -27,25 +27,25 @@ to what you will be using
 # 4. The name of the zip archive is the current date and
 
 time'''
-today = target_dir + time.strftime('%Y%m%d')
-now = time.strftime('%H%M%S')
+#today = target_dir + time.strftime('%Y%m%d')
+#now = time.strftime('%H%M%S')
 
 # Take a comment from the user to create the name of the zip file
 
-comment = input('Enter a comment --> ')
+#comment = input('Enter a comment --> ')
 
-if len(comment) == 0: # check if a comment was entered
-  target = today + os.sep + now + '.zip'
+#if len(comment) == 0: # check if a comment was entered
+#  target = today + os.sep + now + '.zip'
 
-else:
-  target = today + os.sep + now + '_' + \
-
-            comment.replace(' ', '_') + 'tar.gz'     # Notice the backslash!
-
-
+#else:
+#  target = today + os.sep + now + '_' + \
+#
+#            comment.replace(' ', '_') + 'tar.gz'     # Notice the backslash!
 
 
-#target = target_dir + time.strftime('%Y%m%d%H%M%S') +'termux-backup.tar.gz'
+
+
+target = target_dir + time.strftime('%Y%m%d%H%M%S') +'termux-backup.tar.gz'
 
 # 5. We use the zip command (in Unix/Linux) to put the files in a zip archive
 
