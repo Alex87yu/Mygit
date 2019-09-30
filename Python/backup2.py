@@ -44,6 +44,9 @@ tar_command = "tar -zcvf '%s' %s" % (target, ' '.join(source))
 
 # Run the backup
 if os.system(tar_command) == 0:
-  print ('Successful backup to', target)
+  print (source ,'is successful backup to', target)
 else:
   print ('Backup FAILED')
+
+
+  #' '.join(a) 将a里面的数据变为字符串并用空格隔开
