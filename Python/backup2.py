@@ -48,5 +48,4 @@ if os.system(tar_command) == 0:
 else:
   print ('Backup FAILED')
 
-
-  #' '.join(a) 将a里面的数据变为字符串并用空格隔开
+ #' '.join(a) 将a里面的数据变为字符串并用空格隔开
