@@ -1,2 +1,1 @@
-print("hello world")
-print("iloveyou")
+print("insert")
